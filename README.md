@@ -4,7 +4,7 @@ _7/13/18_
 _Mike Irvine, Pat Hottovy, Tim Marlowe_
 
 <p align="center">
-  <img width="460" height="300" src="https://github.com/mikeirvine/dsi-ml-case-study/blob/master/images/uber.jpg">
+  <img src="https://github.com/phottovy/rideshare_churn/blob/master/images/uber.jpg">
 </p>
 
 ## Problem Statement
@@ -71,8 +71,8 @@ For our models, we tried the following five classifiers:
 
 Below is an image of a basic decision tree for this classification problem, with a depth of 4 splits. This type of decision tree is the basis for our Decision Tree, Random Forest, Gradient Boosting, and Adaptive Boosting modeling:
 <p align="center">
-  <img width="600" height="400"
-src="https://github.com/phottovy/dsi-ml-case-study/blob/master/images/decision_tree.png">
+  <img
+src="https://github.com/phottovy/rideshare_churn/blob/master/images/decision_tree.png">
 </p>
 
 We utilized Gridsearch to identify the optimal parameters for each model, using the following code (as applied to random forests below):
@@ -131,8 +131,8 @@ __Final Holdout Data__
 |Adaptive Boosting|.845|.883|
 
 <p align="center">
-  <img width="800" height="600"
-src="https://github.com/phottovy/dsi-ml-case-study/blob/master/images/ROC_Curve.png">
+  <img
+src="https://github.com/phottovy/rideshare_churn/blob/master/images/ROC_Curve.png">
 </p>
 
 As Random forest and gradient boosting modeling produced the highest levels of accuracy and roc_auc scores for our training data, we would likely recommend using one of these two models to predict churn.
@@ -153,4 +153,4 @@ It seems clear that having ridden in the last two weeks is the most important fe
 
 ## Code
 The following code was used to generate these conclusions:
-* [rideshare_casestudy.py](https://github.com/phottovy/dsi-ml-case-study/blob/master/src/rideshare_casestudy.py)
+* [rideshare_casestudy.py](https://github.com/phottovy/rideshare_churn/blob/master/src/rideshare_casestudy.py)
