@@ -113,7 +113,7 @@ Using this code, we then identified the best parameters and applied them to the 
 __Training Data__
 
 ||Accuracy|ROC AUC|Precision|Recall|F1-Score|
-|---|---|---|---|---|---|
+|---|--:|--:|--:|--:|--:|
 |Logistic Regression|.89|.86|.86|.98|.92|
 |Decision Tree|||
 |Random Forest|||
@@ -122,13 +122,13 @@ __Training Data__
 
 __Final Holdout Data__
 
-||Accuracy|ROC AUC|
-|---|---|---|
-|Logistic Regression|.883|.850|
-|Decision Tree|.898|.874|
-|Random Forest|.899|.871|
-|Gradient Boosting|.926|.907|
-|Adaptive Boosting|.845|.883|
+||Accuracy|ROC AUC|Precision|Recall|F1-Score|
+|---|--:|--:|--:|--:|--:|
+|Logistic Regression||||||
+|Decision Tree|||
+|Random Forest|||
+|Gradient Boosting|||
+|Adaptive Boosting|||
 
 
 
