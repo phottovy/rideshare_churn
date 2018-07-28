@@ -113,7 +113,7 @@ Using this code, we then identified the best parameters and applied them to the 
 __Training Data__
 
 ||Accuracy|ROC AUC|Precision|Recall|F1-Score|
-|---|---|---|
+|---|---|---|---|---|
 |Logistic Regression|.89|.86|.86|.98|.92|
 |Decision Tree|||
 |Random Forest|||
