@@ -112,13 +112,13 @@ Using this code, we then identified the best parameters and applied them to the 
 
 __Training Data__
 
-||Accuracy|ROC AUC|Precision|Recall|F1-Score|
+||Accuracy|Precision|Recall|F1-Score|ROC AUC|
 |---|--:|--:|--:|--:|--:|
-|Logistic Regression|.89|.86|.86|.98|.92|
-|Decision Tree|||
-|Random Forest|||
-|Gradient Boosting|||
-|Adaptive Boosting|||
+|Logistic Regression|0.89|0.86|0.98|0.92|0.86|
+|Decision Tree|0.88|0.87|0.96|0.91|0.86|
+|Random Forest|0.90|0.86|0.98|0.92|0.86|
+|Gradient Boosting|0.89|0.87|0.96|0.91|0.86|
+|Adaptive Boosting|0.89|0.85|1.00|0.92|0.85|
 
 __Final Holdout Data__
 
