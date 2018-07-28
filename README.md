@@ -112,13 +112,13 @@ Using this code, we then identified the best parameters and applied them to the 
 
 __Training Data__
 
-||Accuracy|ROC AUC|
+||Accuracy|ROC AUC|Precision|Recall|F1-Score|
 |---|---|---|
-|Logistic Regression|.884|.852|
-|Decision Tree|.883|.859|
-|Random Forest|.891|.863|
-|Gradient Boosting|.887|.863|
-|Adaptive Boosting|.885|.848|
+|Logistic Regression|.89|.86|.86|.98|.92|
+|Decision Tree|||
+|Random Forest|||
+|Gradient Boosting|||
+|Adaptive Boosting|||
 
 __Final Holdout Data__
 
@@ -130,6 +130,12 @@ __Final Holdout Data__
 |Gradient Boosting|.926|.907|
 |Adaptive Boosting|.845|.883|
 
+
+
+
+
+## ROC Plot
+
 <p align="center">
   <img
 src="https://github.com/phottovy/rideshare_churn/blob/master/images/ROC_Curve.png">
@@ -140,7 +146,6 @@ As Random forest and gradient boosting modeling produced the highest levels of a
 ## Feature importance
 
 Below are the feature importances for our the different models:
-
 
 <p align="center">
   <img
@@ -166,6 +171,10 @@ Random Forest:
 | 13 | Astapor                |      0.00892 |
 | 14 | Winterfell             |      0.00564 |
 
+<p align="center">
+  <img
+src="https://github.com/phottovy/rideshare_churn/blob/master/images/adaptive_boosting_feat_importance.png">
+</p>
 
 Adaptive Boosting:
 
@@ -186,6 +195,10 @@ Adaptive Boosting:
 | 13 | trips_in_first_30_days |         0    |
 | 14 | Winterfell             |         0    |
 
+<p align="center">
+  <img
+src="https://github.com/phottovy/rideshare_churn/blob/master/images/gradiant_boosting_feat_importance">
+</p>
 
 Gradiant Boosting:
 
@@ -206,6 +219,10 @@ Gradiant Boosting:
 | 13 | Winterfell             |      0.00679 |
 | 14 | Android                |      0.00639 |
 
+<p align="center">
+  <img
+src="https://github.com/phottovy/rideshare_churn/blob/master/images/decision_tree_feat_importance.png">
+</p>
 
 Decision Tree:
 
@@ -226,6 +243,10 @@ Decision Tree:
 | 13 | Winterfell             |      0.00262 |
 | 14 | Astapor                |      0.00132 |
 
+<p align="center">
+  <img
+src="https://github.com/phottovy/rideshare_churn/blob/master/images/logistic_regression_feat_importance.png">
+</p>
 
 Logistic Regression:
 
@@ -245,7 +266,6 @@ Logistic Regression:
 | 11 | avg_rating_by_driver   |  0.06791 |
 | 12 | Winterfell             |  0.06107 |
 | 13 | avg_rating_of_driver   |  0.03122 |
-
 
 
 It seems clear that having ridden in the last two weeks is the most important feature. We'd suggest a campaign to re-engage people who have not ridden in a few weeks - perhaps a coupon for money off of a ride.
