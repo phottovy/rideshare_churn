@@ -114,7 +114,7 @@ __Training Data__
 
 ||Accuracy|Precision|Recall|F1-Score|ROC AUC|
 |---|--:|--:|--:|--:|--:|
-|Logistic Regression|0.89|0.86|0.98|0.92|0.86|
+|Logistic Regression|0.89|0.85|0.98|0.91|0.85|
 |Decision Tree|0.88|0.87|0.96|0.91|0.86|
 |Random Forest|0.90|0.86|0.98|0.92|0.86|
 |Gradient Boosting|0.89|0.87|0.96|0.91|0.86|
@@ -124,18 +124,44 @@ __Final Holdout Data__
 
 ||Accuracy|ROC AUC|Precision|Recall|F1-Score|
 |---|--:|--:|--:|--:|--:|
-|Logistic Regression||||||
-|Decision Tree|||
-|Random Forest|||
-|Gradient Boosting|||
-|Adaptive Boosting|||
+|Logistic Regression|0.88|0.85|0.98|0.91|0.85|
+|Decision Tree|0.90|0.88|0.97|0.92|0.87|
+|Random Forest|0.90|0.87|0.98|0.92|0.87|
+|Gradient Boosting|0.93|0.91|0.99|0.94|0.91|
+|Adaptive Boosting|0.88|0.84|1.00|0.91|0.84|
 
+## Confusion Matrix
+Logistic Regression
+<p align="center">
+  <img
+src="https://github.com/phottovy/rideshare_churn/blob/master/images/logistic_regression_confusion_matrix.png">
+</p>
 
+Decision Tree
+<p align="center">
+  <img
+src="https://github.com/phottovy/rideshare_churn/blob/master/images/decision_tree_confusion_matrix.png">
+</p>
 
+Random Forest
+<p align="center">
+  <img
+src="https://github.com/phottovy/rideshare_churn/blob/master/images/random_forest_confusion_matrix.png">
+</p>
 
+Gradient Boosting
+<p align="center">
+  <img
+src="https://github.com/phottovy/rideshare_churn/blob/master/images/gradiant_boosting_confusion_matrix.png">
+</p>
+
+Adaptive Learning
+<p align="center">
+  <img
+src="https://github.com/phottovy/rideshare_churn/blob/master/images/adaptive_boosting_confusion_matrix.png">
+</p>
 
 ## ROC Plot
-
 <p align="center">
   <img
 src="https://github.com/phottovy/rideshare_churn/blob/master/images/ROC_Curve.png">
@@ -197,7 +223,7 @@ Adaptive Boosting:
 
 <p align="center">
   <img
-src="https://github.com/phottovy/rideshare_churn/blob/master/images/gradiant_boosting_feat_importance">
+src="https://github.com/phottovy/rideshare_churn/blob/master/images/gradiant_boosting_feat_importance.png">
 </p>
 
 Gradiant Boosting:
